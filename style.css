@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #13171f;
+}
+
+main, footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+main{
+    min-height: calc(100vh - 83px);
+}
+
+#form, div{
+    width: 90%;
+    max-width: 1200px;
+}
+
+#form, label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, label, #button{
+    font-size: 1.1em;
+    color: white;
+}
+
+input{
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b1f27;
+}
+
+small, footer, a{
+    color: #98a1b1;
+}
+
+#button{
+    background-color: #3a71de;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div{
+    position: relative;
+    margin-top: 1em;
+    padding: 2em;
+    background-color: #1b1f27;
+    color: #98a1b1;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    visibility: hidden;
+    overflow-x: scroll;
+}
+
+#copy-btn{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#copy-btn:hover{
+    transition: 0.3s;
+    background-color: #21242a;
+}
